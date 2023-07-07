@@ -1,0 +1,322 @@
+@import url("animation.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 8% 84% 8%;
+}
+
+
+/******** Header menu ********/
+.header {
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 8% 86% 6%;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.nav-logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    gap: 80px;
+    justify-content: right;
+}
+
+.nav-manu__item {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+
+/******** Scroll page navigation ********/
+.page__social-midia {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 25vh;
+    gap: 35px;
+}
+
+.page__scroll-page {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 25vh;
+    gap: 35px;
+}
+
+.scroll-page {
+    transform: rotate(90deg);
+}
+
+a {
+    color: black;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/******** Page 1 ********/
+.container-main {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-main__sup {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 10px;
+}
+
+.main-title {
+    font-size: 12em;
+}
+
+
+.container-main__sub {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/******** Page 2 ********/
+
+
+.project {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+    width: 1150px;
+}
+
+
+.content-item {
+    height: 350px;
+    width: 350px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.content-item:hover {
+    height: 400px;
+    width: 400px;
+    font-size: 18em;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
+}
+
+.project-title {
+    font-size: 3em;
+}
+
+.project-content {
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.project-btn {
+    background-color: transparent;
+    border: transparent;
+    padding: 20px 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 2px;
+}
+.project-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+}
+.project-btn:active {
+    box-shadow: inset rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/******** Page 3 ********/
+.container-contact {
+    grid-column-start: 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+/******** Contact Text ********/
+.contact {
+    grid-column-start: 1;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-title {
+    font-size: 3em;
+}
+
+.contact-text {
+    line-height: 1.7em;
+    font-size: 1em;
+    text-align: center;
+}
+
+div.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info__content__title {
+    font-size: 1.2em;
+}
+
+.contact-info__content__text {
+    font-size: 0.9em;
+}
+
+/******** Contact Form ********/
+.fotm-title {
+    font-size: 3em;
+}
+
+.contact-form {
+    grid-column-start: 2;
+}
+
+.form {
+    position: relative;
+    height: 550px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-input {
+    height: 5vh;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid 1px #2B2730;
+}
+.form-input::placeholder {
+    padding-left: 5px;
+    font-size: 1em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.form-button {
+    background-color: transparent;
+    border: transparent;
+    padding: 20px 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 1em;
+    font-weight: 600;
+}
+.form-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+}
+.form-button:active {
+    box-shadow: inset rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
